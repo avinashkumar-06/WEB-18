@@ -1,0 +1,20 @@
+#container{
+    width: 50%;
+    margin: 100px auto;
+    padding: 40px 20px;
+    background-color: #48c9b0;
+    
+}
+input{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #f2f2f2;
+}
+#add{
+    background-color:#17a589 ;
+    color: white;
+}

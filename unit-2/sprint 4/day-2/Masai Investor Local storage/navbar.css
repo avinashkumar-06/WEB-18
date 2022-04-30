@@ -1,0 +1,24 @@
+#navbar{
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbarh1{
+    color: white;
+}
+#bodytext{
+    width: 40%;
+    margin: 60px auto;
+    text-align: center;
+}
+#bodytext>p{
+    font-size: 30px;
+
+}

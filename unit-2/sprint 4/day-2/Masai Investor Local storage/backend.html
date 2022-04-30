@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKEND</title>
+    <link rel="stylesheet" href="backend.css">
+    <link rel="stylesheet" href="navbar.css">
+    
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <div id="navbar">
+
+        <h1> <a href="frontend.html">FRONTEND</a></h1>
+        <h1> <a href="backend.html">BACKEND</a></a></h1>
+
+
+    </div>
+
+    <!-- FORM  -->
+    <div id="container">
+
+        <form id="form">
+
+            <input id="avatar" type="text" placeholder="Enter Image URL"/>
+            <input id="name" type="text" placeholder="Enter Investor Name"/>
+            <input id="role" type="text" placeholder="Enter Investor Role"/>
+            <input id="logo" type="text" placeholder="Enter Company Logo URL"/>
+            <input id="add" type="submit" value="Add"/>
+
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+            var dataArr=JSON.parse(localStorage.getItem("investorData")) || [];
+
+            document.querySelector("#form").addEventListener("submit",function(){
+                event.preventDefault();
+
+                var obj={
+                    Iavatar:form.avatar.value,
+                    name:form.name.value,
+                    role:form.role.value,
+                    logo:form.logo.value
+                }
+
+                dataArr.push(obj)
+                localStorage.setItem("investorData",JSON.stringify(dataArr))
+                
+
+            })
+
+          
+
+
+
+</script>

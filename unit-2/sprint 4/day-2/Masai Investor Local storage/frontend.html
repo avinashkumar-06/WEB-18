@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTEND</title>
+    <link rel="stylesheet" href="frontend.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+
+    <div id="navbar">
+
+        <h1 class="navbarh1"> <a href="frontend.html">FRONTEND</a></h1>
+        <h1> <a href="backend.html">BACKEND</a></a></h1>
+
+
+    </div>
+
+  
+
+    <!-- Frontend  -->
+
+    <div id="container">
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+var data=JSON.parse(localStorage.getItem("investorData"))
+
+data.map(function(elem){
+
+var parentDiv=document.createElement("div")
+
+var investorImg=document.createElement("img")
+investorImg.src=elem.Iavatar
+investorImg.setAttribute("id","investorImg")
+
+var investorName=document.createElement("h2")
+investorName.innerText=elem.name
+
+var investorRole=document.createElement("h3")
+investorRole.innerText=elem.role
+
+var companyLogo=document.createElement("img")
+companyLogo.src=elem.logo
+companyLogo.setAttribute("id","companyLogo")
+
+parentDiv.append(investorImg,investorName,investorRole,companyLogo)
+document.querySelector("#container").append(parentDiv)
+
+
+})
+
+
+
+</script>
