@@ -1,0 +1,12 @@
+
+#navbar{
+    height: 80px;
+    display: flex;
+    background-color: teal;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
